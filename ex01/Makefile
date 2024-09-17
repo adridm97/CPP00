@@ -6,15 +6,15 @@
 #    By: adrian <adrian@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/10 20:24:01 by aduenas-          #+#    #+#              #
-#    Updated: 2024/09/12 00:55:02 by adrian           ###   ########.fr        #
+#    Updated: 2024/09/12 23:02:23 by adrian           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-NAME	= megaphone
+NAME	= phonebook
 CPP		= c++
 CFLAGS	= -Wall -Wextra -Werror -std=c++98 -fsanitize=address
-SOURCES	= megaphone.cpp
+SOURCES	= main.cpp PhoneBook.cpp Contact.cpp
 OBJS	= ${SOURCES:.cpp=.o}
 
 all: $(NAME)
