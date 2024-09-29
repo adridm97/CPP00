@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Account.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 21:51:45 by adrian            #+#    #+#             */
-/*   Updated: 2024/09/18 19:39:26 by adrian           ###   ########.fr       */
+/*   Updated: 2024/09/29 18:34:24 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,7 @@ void Account::displayStatus(void) const
 }
 void Account::_displayTimestamp(void)
 {
-    std::time_t t = std::time(nullptr);
+    std::time_t t = std::time(NULL);
     std::tm* now = std::localtime(&t);
     std::cout << "[" << (now->tm_year + 1900)
               << std::setw(2) << std::setfill('0') << now->tm_mon + 1
